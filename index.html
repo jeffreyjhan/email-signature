@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Borderless Email Signature Builder</title>
+<style>
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background: #f4f4f5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: #0A0E1A;
+  line-height: 1.5;
+}
+.wrapper { max-width: 760px; margin: 0 auto; }
+.card {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid #e4e4e7;
+  margin-bottom: 24px;
+}
+.card h2 { margin: 0 0 8px; font-size: 22px; letter-spacing: -0.3px; }
+.card h3 { margin: 0 0 16px; font-size: 12px; color: #6366F1; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; }
+.card p { margin: 0 0 12px; color: #475569; }
+.card p:last-child { margin-bottom: 0; }
+.card ol, .card ul { margin: 0; padding-left: 20px; line-height: 1.7; color: #475569; }
+.card li { margin-bottom: 6px; }
+.card code { background: #f4f4f5; padding: 2px 6px; border-radius: 4px; font-size: 13px; color: #6366F1; font-family: 'SF Mono', Menlo, monospace; }
+.sig-label { font-size: 12px; font-weight: 700; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px; }
+.sig-box { padding: 28px; background: white; border: 1px dashed #cbd5e1; border-radius: 8px; overflow-x: auto; }
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s ease;
+}
+.btn-primary {
+  background: #6366F1;
+  color: white;
+}
+.btn-primary:hover { background: #5558e3; }
+.btn-secondary {
+  background: white;
+  color: #0A0E1A;
+  border: 1px solid #e4e4e7;
+}
+.btn-secondary:hover { background: #f4f4f5; }
+.btn-success {
+  background: #06D6A0;
+  color: white;
+}
+.upload-wrapper { position: relative; display: inline-block; }
+.upload-wrapper input[type="file"] {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  cursor: pointer;
+}
+.banner {
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  padding: 20px 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  color: #3730a3;
+}
+.banner strong { color: #1e1b4b; }
+.remove-link { font-size: 13px; color: #94A3B8; text-decoration: underline; cursor: pointer; background: none; border: none; padding: 0; font-family: inherit; }
+.remove-link:hover { color: #ef4444; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+<div class="card">
+<h2>Borderless Email Signature Builder</h2>
+<p>Click <strong>Upload photo</strong> on any signature below. The preview updates instantly. When it looks right, click <strong>Copy signature</strong> and paste into Gmail's signature editor.</p>
+</div>
+
+<div class="banner">
+<strong>How to paste into Gmail:</strong> Settings (gear) → See all settings → General → Signature → <strong>Create new</strong>, name it "Borderless," click into the editor box, Cmd+V. Set it as default for new emails and replies. Save changes at the bottom.
+</div>
+
+<!-- ============ JEFFREY SIGNATURE ============ -->
+<div class="card">
+<div class="sig-label">Signature 1 — Jeffrey Han (Founder, Closer)</div>
+<div class="sig-box">
+
+<div id="sig-jeffrey">
+<table cellpadding="0" cellspacing="0" border="0" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #0A0E1A; border-collapse: collapse;">
+  <tr>
+    <td style="padding-right: 20px; vertical-align: top;">
+      <img id="photo-jeffrey" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22200%22%20height%3D%22200%22%20viewBox%3D%220%200%20200%20200%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%22200%22%20y2%3D%22200%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%236366F1%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%237C3AED%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%22100%22%20y%3D%22128%22%20text-anchor%3D%22middle%22%20font-family%3D%22Helvetica%2CArial%2Csans-serif%22%20font-size%3D%2288%22%20font-weight%3D%22700%22%20fill%3D%22%23F5F5F7%22%3EJH%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Jeffrey Han" width="88" height="88" style="border-radius: 50%; display: block; border: 2px solid #6366F1; object-fit: cover;">
+    </td>
+    <td style="vertical-align: top; padding: 2px 0;">
+      <div style="font-size: 17px; font-weight: 700; color: #0A0E1A; line-height: 1.3; padding-bottom: 2px; letter-spacing: -0.2px;">Jeffrey Han</div>
+      <div style="font-size: 13px; color: #64748b; line-height: 1.5;">Founder</div>
+      <div style="font-size: 13px; color: #64748b; line-height: 1.5; padding-bottom: 6px;">Borderless by Complex Collective</div>
+      <div style="font-size: 13px; color: #0A0E1A; line-height: 1.6;">
+        🇺🇸 <a href="tel:+1XXXXXXXXXX" style="color: #6366F1; text-decoration: none; font-weight: 500;">+1 (XXX) XXX-XXXX</a>
+      </div>
+      <div style="font-size: 12px; line-height: 1.5;">
+        <a href="https://borderless.complexcollective.io" style="color: #94A3B8; text-decoration: none;">borderless.complexcollective.io</a>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="padding-top: 18px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="240" height="40" viewBox="0 0 240 40" style="display: block;">
+        <defs>
+          <linearGradient id="bgrad-j" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#6366F1"/>
+            <stop offset="1" stop-color="#7C3AED"/>
+          </linearGradient>
+        </defs>
+        <g transform="translate(20,20)">
+          <circle cx="0" cy="0" r="15" fill="none" stroke="url(#bgrad-j)" stroke-width="1.5" opacity="0.5"/>
+          <ellipse cx="0" cy="0" rx="7.5" ry="15" fill="none" stroke="url(#bgrad-j)" stroke-width="1.2" opacity="0.7"/>
+          <ellipse cx="0" cy="0" rx="15" ry="2.3" fill="none" stroke="url(#bgrad-j)" stroke-width="1.2" opacity="0.6"/>
+          <ellipse cx="0" cy="-5.3" rx="13.9" ry="1.9" fill="none" stroke="url(#bgrad-j)" stroke-width="0.9" opacity="0.4"/>
+          <ellipse cx="0" cy="5.3" rx="13.9" ry="1.9" fill="none" stroke="url(#bgrad-j)" stroke-width="0.9" opacity="0.4"/>
+          <circle cx="-7.5" cy="-5.3" r="1.3" fill="#06D6A0"/>
+          <circle cx="7.5" cy="-5.3" r="1.3" fill="#06D6A0"/>
+          <circle cx="-7.5" cy="5.3" r="1.3" fill="#06D6A0"/>
+          <circle cx="7.5" cy="5.3" r="1.3" fill="#06D6A0"/>
+          <circle cx="0" cy="-15" r="1.7" fill="#6366F1"/>
+          <circle cx="0" cy="15" r="1.7" fill="#7C3AED"/>
+          <circle cx="-15" cy="0" r="1.7" fill="#6366F1"/>
+          <circle cx="15" cy="0" r="1.7" fill="#7C3AED"/>
+        </g>
+        <text x="46" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="800" letter-spacing="-0.4" fill="#0A0E1A">BORDERLESS</text>
+        <text x="46" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="400" fill="#94A3B8">by Complex Collective</text>
+      </svg>
+    </td>
+  </tr>
+</table>
+</div>
+
+</div>
+<div class="controls">
+  <div class="upload-wrapper">
+    <button class="btn btn-secondary">📷 Upload photo</button>
+    <input type="file" accept="image/*" onchange="updatePhoto('jeffrey', this)">
+  </div>
+  <button class="btn btn-secondary" onclick="editPhone('jeffrey')">📞 Edit phone</button>
+  <button class="btn btn-primary" onclick="copySignature('sig-jeffrey', this)">Copy signature</button>
+  <button class="remove-link" onclick="resetPhoto('jeffrey', 'JH')">Reset photo</button>
+</div>
+</div>
+
+<!-- ============ DYLAN SIGNATURE ============ -->
+<div class="card">
+<div class="sig-label">Signature 2 — Dylan (Setter)</div>
+<div class="sig-box">
+
+<div id="sig-dylan">
+<table cellpadding="0" cellspacing="0" border="0" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #0A0E1A; border-collapse: collapse;">
+  <tr>
+    <td style="padding-right: 20px; vertical-align: top;">
+      <img id="photo-dylan" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22200%22%20height%3D%22200%22%20viewBox%3D%220%200%20200%20200%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%22200%22%20y2%3D%22200%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%236366F1%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%237C3AED%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%22100%22%20y%3D%22128%22%20text-anchor%3D%22middle%22%20font-family%3D%22Helvetica%2CArial%2Csans-serif%22%20font-size%3D%2288%22%20font-weight%3D%22700%22%20fill%3D%22%23F5F5F7%22%3ED%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Dylan" width="88" height="88" style="border-radius: 50%; display: block; border: 2px solid #6366F1; object-fit: cover;">
+    </td>
+    <td style="vertical-align: top; padding: 2px 0;">
+      <div style="font-size: 17px; font-weight: 700; color: #0A0E1A; line-height: 1.3; padding-bottom: 2px; letter-spacing: -0.2px;">Dylan [LastName]</div>
+      <div style="font-size: 13px; color: #64748b; line-height: 1.5;">Client Strategist</div>
+      <div style="font-size: 13px; color: #64748b; line-height: 1.5; padding-bottom: 6px;">Borderless by Complex Collective</div>
+      <div style="font-size: 13px; color: #0A0E1A; line-height: 1.6;">
+        🇺🇸 <a href="tel:+1XXXXXXXXXX" style="color: #6366F1; text-decoration: none; font-weight: 500;">+1 (XXX) XXX-XXXX</a>
+      </div>
+      <div style="font-size: 12px; line-height: 1.5;">
+        <a href="https://borderless.complexcollective.io" style="color: #94A3B8; text-decoration: none;">borderless.complexcollective.io</a>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="padding-top: 18px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="240" height="40" viewBox="0 0 240 40" style="display: block;">
+        <defs>
+          <linearGradient id="bgrad-d" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#6366F1"/>
+            <stop offset="1" stop-color="#7C3AED"/>
+          </linearGradient>
+        </defs>
+        <g transform="translate(20,20)">
+          <circle cx="0" cy="0" r="15" fill="none" stroke="url(#bgrad-d)" stroke-width="1.5" opacity="0.5"/>
+          <ellipse cx="0" cy="0" rx="7.5" ry="15" fill="none" stroke="url(#bgrad-d)" stroke-width="1.2" opacity="0.7"/>
+          <ellipse cx="0" cy="0" rx="15" ry="2.3" fill="none" stroke="url(#bgrad-d)" stroke-width="1.2" opacity="0.6"/>
+          <ellipse cx="0" cy="-5.3" rx="13.9" ry="1.9" fill="none" stroke="url(#bgrad-d)" stroke-width="0.9" opacity="0.4"/>
+          <ellipse cx="0" cy="5.3" rx="13.9" ry="1.9" fill="none" stroke="url(#bgrad-d)" stroke-width="0.9" opacity="0.4"/>
+          <circle cx="-7.5" cy="-5.3" r="1.3" fill="#06D6A0"/>
+          <circle cx="7.5" cy="-5.3" r="1.3" fill="#06D6A0"/>
+          <circle cx="-7.5" cy="5.3" r="1.3" fill="#06D6A0"/>
+          <circle cx="7.5" cy="5.3" r="1.3" fill="#06D6A0"/>
+          <circle cx="0" cy="-15" r="1.7" fill="#6366F1"/>
+          <circle cx="0" cy="15" r="1.7" fill="#7C3AED"/>
+          <circle cx="-15" cy="0" r="1.7" fill="#6366F1"/>
+          <circle cx="15" cy="0" r="1.7" fill="#7C3AED"/>
+        </g>
+        <text x="46" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="800" letter-spacing="-0.4" fill="#0A0E1A">BORDERLESS</text>
+        <text x="46" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="400" fill="#94A3B8">by Complex Collective</text>
+      </svg>
+    </td>
+  </tr>
+</table>
+</div>
+
+</div>
+<div class="controls">
+  <div class="upload-wrapper">
+    <button class="btn btn-secondary">📷 Upload photo</button>
+    <input type="file" accept="image/*" onchange="updatePhoto('dylan', this)">
+  </div>
+  <button class="btn btn-secondary" onclick="editPhone('dylan')">📞 Edit phone</button>
+  <button class="btn btn-primary" onclick="copySignature('sig-dylan', this)">Copy signature</button>
+  <button class="remove-link" onclick="resetPhoto('dylan', 'D')">Reset photo</button>
+</div>
+</div>
+
+<!-- ============ SIDNEY SIGNATURE ============ -->
+<div class="card">
+<div class="sig-label">Signature 3 — Sidney (Setter)</div>
+<div class="sig-box">
+
+<div id="sig-sidney">
+<table cellpadding="0" cellspacing="0" border="0" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #0A0E1A; border-collapse: collapse;">
+  <tr>
+    <td style="padding-right: 20px; vertical-align: top;">
+      <img id="photo-sidney" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22200%22%20height%3D%22200%22%20viewBox%3D%220%200%20200%20200%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%22200%22%20y2%3D%22200%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%236366F1%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%237C3AED%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20width%3D%22200%22%20height%3D%22200%22%20fill%3D%22url(%23g)%22%2F%3E%3Ctext%20x%3D%22100%22%20y%3D%22128%22%20text-anchor%3D%22middle%22%20font-family%3D%22Helvetica%2CArial%2Csans-serif%22%20font-size%3D%2288%22%20font-weight%3D%22700%22%20fill%3D%22%23F5F5F7%22%3ES%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Sidney" width="88" height="88" style="border-radius: 50%; display: block; border: 2px solid #6366F1; object-fit: cover;">
+    </td>
+    <td style="vertical-align: top; padding: 2px 0;">
+      <div style="font-size: 17px; font-weight: 700; color: #0A0E1A; line-height: 1.3; padding-bottom: 2px; letter-spacing: -0.2px;">Sidney [LastName]</div>
+      <div style="font-size: 13px; color: #64748b; line-height: 1.5;">Client Strategist</div>
+      <div style="font-size: 13px; color: #64748b; line-height: 1.5; padding-bottom: 6px;">Borderless by Complex Collective</div>
+      <div style="font-size: 13px; color: #0A0E1A; line-height: 1.6;">
+        🇺🇸 <a href="tel:+1XXXXXXXXXX" style="color: #6366F1; text-decoration: none; font-weight: 500;">+1 (XXX) XXX-XXXX</a>
+      </div>
+      <div style="font-size: 12px; line-height: 1.5;">
+        <a href="https://borderless.complexcollective.io" style="color: #94A3B8; text-decoration: none;">borderless.complexcollective.io</a>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="padding-top: 18px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="240" height="40" viewBox="0 0 240 40" style="display: block;">
+        <defs>
+          <linearGradient id="bgrad-s" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#6366F1"/>
+            <stop offset="1" stop-color="#7C3AED"/>
+          </linearGradient>
+        </defs>
+        <g transform="translate(20,20)">
+          <circle cx="0" cy="0" r="15" fill="none" stroke="url(#bgrad-s)" stroke-width="1.5" opacity="0.5"/>
+          <ellipse cx="0" cy="0" rx="7.5" ry="15" fill="none" stroke="url(#bgrad-s)" stroke-width="1.2" opacity="0.7"/>
+          <ellipse cx="0" cy="0" rx="15" ry="2.3" fill="none" stroke="url(#bgrad-s)" stroke-width="1.2" opacity="0.6"/>
+          <ellipse cx="0" cy="-5.3" rx="13.9" ry="1.9" fill="none" stroke="url(#bgrad-s)" stroke-width="0.9" opacity="0.4"/>
+          <ellipse cx="0" cy="5.3" rx="13.9" ry="1.9" fill="none" stroke="url(#bgrad-s)" stroke-width="0.9" opacity="0.4"/>
+          <circle cx="-7.5" cy="-5.3" r="1.3" fill="#06D6A0"/>
+          <circle cx="7.5" cy="-5.3" r="1.3" fill="#06D6A0"/>
+          <circle cx="-7.5" cy="5.3" r="1.3" fill="#06D6A0"/>
+          <circle cx="7.5" cy="5.3" r="1.3" fill="#06D6A0"/>
+          <circle cx="0" cy="-15" r="1.7" fill="#6366F1"/>
+          <circle cx="0" cy="15" r="1.7" fill="#7C3AED"/>
+          <circle cx="-15" cy="0" r="1.7" fill="#6366F1"/>
+          <circle cx="15" cy="0" r="1.7" fill="#7C3AED"/>
+        </g>
+        <text x="46" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="17" font-weight="800" letter-spacing="-0.4" fill="#0A0E1A">BORDERLESS</text>
+        <text x="46" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="9" font-weight="400" fill="#94A3B8">by Complex Collective</text>
+      </svg>
+    </td>
+  </tr>
+</table>
+</div>
+
+</div>
+<div class="controls">
+  <div class="upload-wrapper">
+    <button class="btn btn-secondary">📷 Upload photo</button>
+    <input type="file" accept="image/*" onchange="updatePhoto('sidney', this)">
+  </div>
+  <button class="btn btn-secondary" onclick="editPhone('sidney')">📞 Edit phone</button>
+  <button class="btn btn-primary" onclick="copySignature('sig-sidney', this)">Copy signature</button>
+  <button class="remove-link" onclick="resetPhoto('sidney', 'S')">Reset photo</button>
+</div>
+</div>
+
+<div class="card">
+<h3>Before you go live</h3>
+<ul>
+<li><strong>Edit the placeholder text in the HTML:</strong> Replace <code>Dylan [LastName]</code> and <code>Sidney [LastName]</code>, and the <code>+1 (XXX) XXX-XXXX</code> phone numbers. Reload the page, then click Copy.</li>
+<li><strong>For best deliverability, host the profile photos publicly.</strong> Uploaded photos are embedded as base64 data in the copied HTML. Gmail usually handles this fine, but some receiving email clients (older Outlook, especially) may strip data URIs. For maximum compatibility, commit the photos to your Railway <code>images/</code> folder and I'll rewrite this file to use hosted URLs.</li>
+<li><strong>Logo renders as inline SVG.</strong> Works in Gmail and Apple Mail. If it doesn't render in an edge-case client, export <code>borderless-logo.png</code> from <code>logo-export.html</code> and swap the <code>&lt;svg&gt;</code> block for <code>&lt;img src="..." height="40"&gt;</code>.</li>
+</ul>
+</div>
+
+</div>
+
+<script>
+function updatePhoto(who, input) {
+  const file = input.files[0];
+  if (!file) return;
+
+  if (file.size > 25 * 1024 * 1024) {
+    alert('Photo is larger than 25MB — that is way bigger than needed. Try a normal phone photo.');
+    input.value = '';
+    return;
+  }
+
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const img = new Image();
+    img.onload = function() {
+      const canvas = document.createElement('canvas');
+      const size = 200;
+      canvas.width = size;
+      canvas.height = size;
+      const ctx = canvas.getContext('2d');
+
+      const sourceSize = Math.min(img.width, img.height);
+      const sx = (img.width - sourceSize) / 2;
+      const sy = (img.height - sourceSize) / 2;
+      ctx.drawImage(img, sx, sy, sourceSize, sourceSize, 0, 0, size, size);
+
+      const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.85);
+      document.getElementById('photo-' + who).src = compressedDataUrl;
+    };
+    img.src = e.target.result;
+  };
+  reader.readAsDataURL(file);
+}
+
+function editPhone(who) {
+  const container = document.getElementById('sig-' + who);
+  const phoneLink = container.querySelector('a[href^="tel:"]');
+  const current = phoneLink.textContent.trim();
+
+  const newPhone = prompt('Enter phone number (e.g., +1 (555) 123-4567):', current);
+  if (newPhone === null) return;
+
+  const trimmed = newPhone.trim();
+  if (!trimmed) return;
+
+  const cleanNumber = trimmed.replace(/[^\d+]/g, '');
+  phoneLink.href = 'tel:' + cleanNumber;
+  phoneLink.textContent = trimmed;
+}
+
+function resetPhoto(who, initials) {
+  const placeholder = 'data:image/svg+xml;utf8,' + encodeURIComponent(
+    '<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">' +
+    '<defs><linearGradient id="g" x1="0" y1="0" x2="200" y2="200" gradientUnits="userSpaceOnUse">' +
+    '<stop offset="0" stop-color="#6366F1"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs>' +
+    '<rect width="200" height="200" fill="url(#g)"/>' +
+    '<text x="100" y="128" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="88" font-weight="700" fill="#F5F5F7">' + initials + '</text>' +
+    '</svg>'
+  );
+  document.getElementById('photo-' + who).src = placeholder;
+}
+
+function copySignature(elementId, btn) {
+  const el = document.getElementById(elementId);
+  const range = document.createRange();
+  range.selectNodeContents(el);
+  const selection = window.getSelection();
+  selection.removeAllRanges();
+  selection.addRange(range);
+
+  try {
+    document.execCommand('copy');
+    selection.removeAllRanges();
+    const originalText = btn.textContent;
+    const originalClass = btn.className;
+    btn.textContent = '✓ Copied — now paste into Gmail';
+    btn.className = 'btn btn-success';
+    setTimeout(function() {
+      btn.textContent = originalText;
+      btn.className = originalClass;
+    }, 3000);
+  } catch (err) {
+    alert('Copy failed. Manually select the signature and press Cmd+C.');
+  }
+}
+</script>
+
+</body>
+</html>
